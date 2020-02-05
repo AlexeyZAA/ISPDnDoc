@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F8E3B904-7BB6-4F7F-8239-AF674374BA19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpaseFormISPDn</RootNamespace>
+    <AssemblyName>ISPDN-MODEL-UGROZ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\PROEKT\PUBLIC\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <TargetCulture>ru-RU</TargetCulture>
+    <ProductName>111</ProductName>
+    <PublisherName>111</PublisherName>
+    <SuiteName>111</SuiteName>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SpaseFormISPDn.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F84BDF73F3959B444F95D8D2D319FA852BE974B5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ISPDN_C_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassMetodCeli.cs" />
+    <Compile Include="ClassMetodDocumentCreate.cs" />
+    <Compile Include="ClassMetodISPDn.cs" />
+    <Compile Include="ClassMetodKategoryPD.cs" />
+    <Compile Include="ClassMetodOrg.cs" />
+    <Compile Include="ClassGlobVar.cs" />
+    <Compile Include="ClassMetodOtdel.cs" />
+    <Compile Include="ClassMetodOsnDopPd.cs" />
+    <Compile Include="ClassMetodPravo.cs" />
+    <Compile Include="ClassMetodSpecBioPD.cs" />
+    <Compile Include="ClassMetodSubj.cs" />
+    <Compile Include="ClassMetodPravoSubj.cs" />
+    <Compile Include="FormDocumentAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocumentAll.Designer.cs">
+      <DependentUpon>FormDocumentAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocumentSoglasie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocumentSoglasie.Designer.cs">
+      <DependentUpon>FormDocumentSoglasie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInformationUvPortal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInformationUvPortal.Designer.cs">
+      <DependentUpon>FormInformationUvPortal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormISPDnAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormISPDnAll.Designer.cs">
+      <DependentUpon>FormISPDnAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormActual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormActual.Designer.cs">
+      <DependentUpon>FormActual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfIspdnAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfIspdnAdd.Designer.cs">
+      <DependentUpon>FormConfIspdnAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBioAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBioAdd.Designer.cs">
+      <DependentUpon>FormBioAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCeliAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCeliAdd.Designer.cs">
+      <DependentUpon>FormCeliAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocumentMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocumentMDI.Designer.cs">
+      <DependentUpon>FormDocumentMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategoryDopPDAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategoryDopPDAdd.Designer.cs">
+      <DependentUpon>FormKategoryDopPDAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOtdelAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOtdelAll.Designer.cs">
+      <DependentUpon>FormOtdelAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDocumentUved.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDocumentUved.Designer.cs">
+      <DependentUpon>FormDocumentUved.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModelUgrozMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModelUgrozMDI.Designer.cs">
+      <DependentUpon>FormModelUgrozMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdAll.Designer.cs">
+      <DependentUpon>FormPdAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPravo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPravo.Designer.cs">
+      <DependentUpon>FormPravo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPravoIsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPravoIsAdd.Designer.cs">
+      <DependentUpon>FormPravoIsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRabotnikiPDAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRabotnikiPDAdd.Designer.cs">
+      <DependentUpon>FormRabotnikiPDAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormISPDnAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormISPDnAdd.Designer.cs">
+      <DependentUpon>FormISPDnAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOpasnUgroz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpasnUgroz.Designer.cs">
+      <DependentUpon>FormOpasnUgroz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSubjectPDAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSubjectPDAdd.Designer.cs">
+      <DependentUpon>FormSubjectPDAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormVerUgroz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormVerUgroz.Designer.cs">
+      <DependentUpon>FormVerUgroz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKlassIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKlassIS.Designer.cs">
+      <DependentUpon>FormKlassIS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIshodZachita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIshodZachita.Designer.cs">
+      <DependentUpon>FormIshodZachita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOtdelAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOtdelAdd.Designer.cs">
+      <DependentUpon>FormOtdelAdd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormDocumentAll.resx">
+      <DependentUpon>FormDocumentAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocumentSoglasie.resx">
+      <DependentUpon>FormDocumentSoglasie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInformationUvPortal.resx">
+      <DependentUpon>FormInformationUvPortal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormISPDnAll.resx">
+      <DependentUpon>FormISPDnAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormActual.resx">
+      <DependentUpon>FormActual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocumentMDI.resx">
+      <DependentUpon>FormDocumentMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOtdelAll.resx">
+      <DependentUpon>FormOtdelAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDocumentUved.resx">
+      <DependentUpon>FormDocumentUved.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModelUgrozMDI.resx">
+      <DependentUpon>FormModelUgrozMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOtdelAdd.resx">
+      <DependentUpon>FormOtdelAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <Compile Include="FormOrganizationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOrganizationAdd.Designer.cs">
+      <DependentUpon>FormOrganizationAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSostavKlass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSostavKlass.Designer.cs">
+      <DependentUpon>FormSostavKlass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBazaMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBazaMDI.Designer.cs">
+      <DependentUpon>FormBazaMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISPDnBDDataSet.cs">
+      <DependentUpon>ISPDnBDDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ISPDnBDDataSet.Designer.cs">
+      <DependentUpon>ISPDnBDDataSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormConfIspdnAdd.resx">
+      <DependentUpon>FormConfIspdnAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBioAdd.resx">
+      <DependentUpon>FormBioAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCeliAdd.resx">
+      <DependentUpon>FormCeliAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategoryDopPDAdd.resx">
+      <DependentUpon>FormKategoryDopPDAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdAll.resx">
+      <DependentUpon>FormPdAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPravo.resx">
+      <DependentUpon>FormPravo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPravoIsAdd.resx">
+      <DependentUpon>FormPravoIsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRabotnikiPDAdd.resx">
+      <DependentUpon>FormRabotnikiPDAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormISPDnAdd.resx">
+      <DependentUpon>FormISPDnAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpasnUgroz.resx">
+      <DependentUpon>FormOpasnUgroz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSubjectPDAdd.resx">
+      <DependentUpon>FormSubjectPDAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormVerUgroz.resx">
+      <DependentUpon>FormVerUgroz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKlassIS.resx">
+      <DependentUpon>FormKlassIS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIshodZachita.resx">
+      <DependentUpon>FormIshodZachita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOrganizationAdd.resx">
+      <DependentUpon>FormOrganizationAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSostavKlass.resx">
+      <DependentUpon>FormSostavKlass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBazaMDI.resx">
+      <DependentUpon>FormBazaMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ISPDnBDDataSet.xsc">
+      <DependentUpon>ISPDnBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ISPDnBDDataSet.xsd" />
+    <None Include="ISPDnBDDataSet.xss">
+      <DependentUpon>ISPDnBDDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ISPDnBD.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Эмблема-на-форму.jpg" />
+    <None Include="Resources\ЭмблемаFin копия.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
